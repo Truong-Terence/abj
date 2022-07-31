@@ -11,3 +11,8 @@ https://steamcommunity.com/openid as the provider
 The returned Claimed ID will contain the user's 64-bit SteamID. The Claimed ID format is: https://steamcommunity.com/openid/id/<steamid>
 !! USE THE BUTTON HERE !!
 https://steamcommunity.com/dev?l=french %>
+
+
+response = HTTParty.get('https://api.stackexchange.com/2.2/questions?site=stackoverflow')
+puts response.body, response.code, response.message, response.headers.inspect
+
